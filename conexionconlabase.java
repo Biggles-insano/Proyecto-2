@@ -1,19 +1,15 @@
-import org.neo4j.driver.*;
+import org.neo4j.driver.AuthTokens;
+import org.neo4j.driver.Driver;
+import org.neo4j.driver.GraphDatabase;
 
 public class conexionconlabase {
-    public static void main(String[] args) {
-        // Establecer la conexión a la base de datos
-        try (Driver driver = GraphDatabase.driver("bolt://localhost:7474", AuthTokens.basic("neo4j", "pissues-windlass-rescue"))) {
-            // Crear una sesión para ejecutar consultas
-            try (Session session = driver.session()) {
-                // Ejecutar una consulta
-                StatementResult result = session.run("MATCH (a:Artista) RETURN a.nombre AS nombre");
-                // Iterar sobre los resultados
-                while (result.hasNext()) {
-                    Record record = result.next();
-                    System.out.println(record.get("nombre").asString());
-                }
-            }
-        }
+    private final Driver driver;
+
+    public Neo4jConnector() {
+        this.driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic("neo4j", "issues-windlass-rescue"));
+    }
+
+    public Driver getDriver() {
+        return driver;
     }
 }
