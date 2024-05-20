@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libs/neo4j-java-driver-5.20.0.jar"
+    ]
+}
