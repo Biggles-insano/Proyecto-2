@@ -2,7 +2,7 @@ ARTIST,LOCATION,POPULAR_SONG,MOOD,GENRE,INFLUENCED_BY,COLLABORATED_WITH,STYLE,DE
 Shakira,Colombia,La La La,Feliz,Pop,Gloria Estefan, Madonna,"Belly Dance, Pop Rock",1990s
 The Beatles,England,Hey Jude,Feliz,Rock,Elvis Presley, Chuck Berry,"Rock, Pop Rock",1960s
 BTS,South Korea,Dynamite,Energetico,Pop,Seo Taiji and Boys, H.O.T.,"K-pop, Hip Hop",2010s
-Ludwig van Beethoven,Germany,Für Elise,Calmante,Classical,,"Classical, Romantic",1800s
+Ludwig van Beethoven,Germany,Für Elise,Calmante,Classical,"Classical, Romantic",1800s
 Kendrick Lamar,United States,Alright,Motivacional,Hip Hop,Tupac Shakur, Nas,"Hip Hop, Conscious Rap",2010s
 The Beatles,UK,Hey Jude,Feliz,Rock,Elvis Presley, Chuck Berry,"Rock, Pop Rock",1960s
 Michael Jackson,USA,Billie Jean,Feliz,Pop,James Brown, Jackie Wilson,"Pop, R&B, Dance",1980s
